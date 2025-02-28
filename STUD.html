@@ -74,6 +74,52 @@
         <form action="">tag form</form>
         <textarea name="текстареа" id=""></textarea>
 
+        <table border="2">
+            <tr>
+                <td><b>Селектор</b></td>
+                <td><b>Специфичность</b></td>
+            </tr>
+            <tr>
+                <td><b>#page-title{}</b></td>
+                <td><b>1-0-0</b></td>
+            </tr>
+            <tr>
+                <td><b>.title{}</b></td>
+                <td><b>0-1-0</b></td>
+            </tr>
+            <tr>
+                <td><b>h1{}</b></td>
+                <td><b>0-0-1</b></td>
+            </tr>
+            <tr>
+                <td><b>h1.title#page-title{}</b></td>
+                <td><b>1-1-1</b></td>
+            </tr>
+            <tr>
+                <td><b>.titlepage-title{}</b></td>
+                <td><b>1-1-0</b></td>
+            </tr>
+            <tr>
+                <td><b>h1#page-title</b></td>
+                <td><b>1-0-1</b></td>
+            </tr>
+            <tr>
+                <td><b>.title.red-title#page-title{}</b></td>
+                <td><b>1-2-0</b></td>
+            </tr>
+            <tr>
+                <td><b>div. title{}</b></td>
+                <td><b>0-1-1</b></td>
+            </tr>
+            <tr>
+                <td><b>div h1#page-title{}</b></td>
+                <td><b>1-0-2</b></td>
+            </tr>
+            <tr>
+                <td><b>#main h1#page-title{}</b></td>
+                <td><b>2-0-1</b></td>
+            </tr>
+        </table>
 
         
 <footer>
@@ -82,3 +128,9 @@
     </body>
 </html>
 
+<!-- шпора по CSS
+универсальный {} все элементы типа (h1, p и т.д)
+по тегу p{} <p>Text</p>
+по классу p.about {} <p class="about">Text</p>
+по id #about {} <p id="description">Text</p>
+по атрибуту [title] <p title="Описание">Текст</p>
