@@ -12,6 +12,7 @@ h1 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+    text-align: center;
 } 
 
 .about::before {
@@ -21,12 +22,13 @@ h1 {
     background-color: rgb(255, 0, 0);
 }
 
+
 p.about{
     background-color: blueviolet;
     position: absolute;
     left: 30%;
 }
-*{
+{
     color:red ;
 }
 
@@ -42,3 +44,152 @@ p.about{
 .contacts-link[href]:hover {
     color: brown;
 }
+.contacts-link[href]:active {
+    color: rgb(138, 165, 42);
+}
+
+article {
+    color:blue;
+}
+
+article>:first-child {
+    color: aqua;
+}
+article>:last-child {
+    color: red;
+}
+
+.container {
+    box-sizong: border-box;
+    width: 250px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 4px solid gray;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .container::before {
+    content: "::before";
+  }
+  .container::after {
+    content: "::after";
+  }
+  
+  .container::before,
+  .container::after {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: coral;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .text {
+    margin: 20px 0;
+  }
+  
+  .text::first-letter {
+    color: coral;
+    font-size: 20px;
+  }
+  
+  .text::first-line {
+    color: gray;
+  }
+  .selector,
+.input[type="text"],
+.parent > .children {
+                          
+  /* Позиционирование */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+                          
+  /* Блочная модель */
+  box-sizing: border-box;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  padding: 0 20px;
+  /* Рамки и фоны */
+  border: 10px solid #888888;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  /* Оформление текста */
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+                          
+  /* Анимации */
+  animation: hello 1s linear forwards;
+  transform: translate(0, 10px);
+  transition: color 0.2s ease;
+                          
+  /* Прочее */
+  cursor: pointer;
+  opacity: 0.7;
+  overflow: hidden;
+}
+.button {
+    height: 20px;
+    padding: 0;
+    background: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(128, 0, 0);
+  }
+  .button--red {
+    color: red;
+  }
+  .popup__button {
+    margin: 0 10px;
+  }
+  .popup__button--no-margin {
+    margin: 0;
+  }
+
+  .button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: #6e1212; /*рамка*/
+}
+.header__button{
+    margin: 40px; /*отступ*/
+    position: relative;
+}
+
+.cont {
+    box-sizing: border-box;
+    width: 200px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    border: 4px solid gray;
+    border-style:initial
+    font-size: 16px;
+    line-height: 20px;
+}
+.block {
+    margin: 20px 0;
+    background: PapayaWhip;
+}
+.inline{
+        background: crimson;
+        color: white;
+    }
+.div__child {
+        width: 40%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: lightcoral;
+      }
