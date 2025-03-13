@@ -18,3 +18,35 @@ footer {
     text-align: center;
     text-shadow: 10cm;
 }
+.home__about-block2{
+    display: grid;
+    grid-template-columns: 1fr 404px;
+    grid-template-areas: 
+    "img1 img2"
+    "title img2"
+    "text text";
+    gap: 100px 50px;
+}
+
+.home__about-picture1 {
+    grid-area: img1;
+}
+
+.home__about-picture2 {
+    grid-area: img2;
+    align-self: flex-end
+}
+
+.home__about-title {
+    grid-area: title;
+    margin: 0;
+    font-size: 44px;
+
+}
+.home__about-text {
+    grid-area: text;
+    margin: 0 0 0 auto;
+    max-width: 870px;
+    
+    
+}

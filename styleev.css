@@ -62,3 +62,12 @@ overflow: hidden;
         margin-top: 15px;
         font-weight: 300;
 }
+.listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 60px;
+    
+}
+.listing__event-card {
+    width: calc(33.33333% - 40px);
+}
