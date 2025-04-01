@@ -178,3 +178,54 @@
  border - рамка 
  padding - внутренние поля
  content - содержимое
+
+ Порядок свойств CSS
+Позиционирование;
+Блочная модель;
+Рамки и фоны;
+Оформление текста;
+Анимации;
+Прочее.
+
+Пример
+.selector,
+.input[type="text"],
+.parent > .children {
+                          
+  /* Позиционирование */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+                          
+  /* Блочная модель */
+  box-sizing: border-box;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  padding: 0 20px;
+  /* Рамки и фоны */
+  border: 10px solid #888888;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  /* Оформление текста */
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+                          
+  /* Анимации */
+  animation: hello 1s linear forwards;
+  transform: translate(0, 10px);
+  transition: color 0.2s ease;
+                          
+  /* Прочее */
+  cursor: pointer;
+  opacity: 0.7;
+  overflow: hidden;
+}
